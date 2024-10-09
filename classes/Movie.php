@@ -20,12 +20,12 @@ class Movie {
   }
 
   public function showGeneralInfo() {
-    echo "Film $this->title, genere $this->genre, lingua originale $this->original_language, durata $this->duration";
+    "Film $this->title, genere $this->genre, lingua originale $this->original_language, durata $this->duration";
   }
 }
 
 $green_book = new Movie('Green book', 'biografico', 130, '', '', []);
 $lady_bird = new Movie('Lady bird', 'commedia', 93, '', '', []);
-echo var_dump($green_book);
-echo var_dump($lady_bird);
+var_dump($green_book);
+var_dump($lady_bird);
 ; ?>
