@@ -1,0 +1,67 @@
+/* Css reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Generics */
+main {
+  padding: 5px;
+
+  font-family: Arial, Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: flex;
+  flex-basis: calc(100% / 3);
+  aspect-ratio: 3;
+}
+
+img {
+  max-width: 50%;
+}
+
+/* Utilities */
+.container-md {
+  max-width: 1258px;
+  margin: 0 auto;
+
+  padding: 10px 15px;
+}
+
+ul.film-list {
+  margin-top: 30px; 
+}
+
+.title {
+  font-size: 1.5rem;
+}
+
+.genre,
+.duration {
+  color: #084a64;  
+}
+
+.duration:after {
+  content: ' min'
+}
+
+.row {
+  margin: 0 -15px;
+  display: flex;  
+}
+
+.col {
+  padding: 0 15px;
+}
+
+.text-content-wrapper {
+  padding: 10px 15px;
+  background-color: #6d7e8e;
+  flex-grow: 1;
+}
