@@ -1,10 +1,14 @@
 <?php 
-  class Genre {
-    private string $nome;
+  class Genre implements JsonSerializable {
+    private string $name;
     
-    public function __construct(string $_nome)
+    public function __construct(string $_name)
     {
-      $this->nome = $_nome;
+      $this->name = $_name;
+    }
+
+    public function jsonSerialize(): mixed {
+      return $this->name;
     }
   }
 ?>
